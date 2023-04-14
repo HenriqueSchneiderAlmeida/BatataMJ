@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+    </head>
+</head>
+<body>                                 <!--Sticky-top para que o header acompanhe a pagina durante a rolagem -->
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="titulo-font m-0 navbar-brand">MJ Batatas Gourmet</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-block d-md-flex">
+                    <!-- d-block é display block mas é geral // com o d-md-flex o display a partir do tamanho medio o display será flex -->
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link active">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a MJ Batatas</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">                            
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventoes</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso Cardápio</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Faça seu Pedido</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <section id="sobre">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">                
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img class="w-100 height-slide" src="images/slides/requeijaobacon.jpg" alt="Batata Recheada Requeijão com Bacon">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="w-100 height-slide" src="images/slides/batatarecheada.jpg" alt="Batata Recheada Catupiry">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="w-100 height-slide" src="images/slides/panela.jpg" alt="Panela Strogonoff">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>   
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="Foto do salão do restaurante">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="titulo-font">Sobre a <span class="font-color"> MJ Batata Gourmet</span></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, omnis? Molestias numquam quod ad praesentium distinctio, vel excepturi magnam quo ea recusandae, cumque ex cum rerum veritatis quibusdam libero ullam.
+                        </p>
+                        <h3 class="titulo-font">Sobre os <span class="font-color"> recheios</span></h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur perferendis quod amet? Ad saepe rerum eum temporibus atque? In dolore voluptatem consequuntur sequi eius? Incidunt fugiat minus eius error modi.
+                        </p>
+                        <ul>
+                            <li>Recheio 1</li>
+                            <li>Recheio 2</li>
+                            <li>Recheio 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="eventos">
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="titulo-font text-center">Para todas <span class="font-color">as ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/eventos/aniversario.jpg" class="d-block w-100 rounded mb-2" alt="">
+                        <h3 class="titulo-font pt-3 font-color fs-4">                        
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversário</h3>
+                        <p>
+                            <span class="font-color">Kit Festa</span> Bolo de chocolate com cobertura e granulado, 100 Brigadeiros e 100 Beijinhos.
+                        </p>
+                        <p>
+                            <span class="font-color fw-bold">R$ 158,00</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/confraternizacoes.jpg" class="d-block w-100 rounded mb-2" alt="Confraternizacao">
+                        <h3 class="titulo-font pt-3 font-color fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Confraternização</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo error atque provident aliquam suscipit, minus ipsam ullam, consequuntur natus ea eum quos cumque? Dolorum accusantium temporibus ipsam tempora maxime. Porro.
+                        </p>
+                    </div><div class="col-md-4">
+                        <img src="images/eventos/casamento.jpg" class="d-block w-100 rounded mb-2" alt="Eventos Especiáis">
+                        <h3 class="titulo-font pt-3 font-color fs-4">
+                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            Eventos Especiáis</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo error atque provident aliquam suscipit, minus ipsam ullam, consequuntur natus ea eum quos cumque? Dolorum accusantium temporibus ipsam tempora maxime. Porro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cardapio">
+    <div class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="titulo-font text-center mb-4">Nosso <span class="font-color">cardápio</span></h2>
+            </div>            
+        <div class="row">
+            <div class="col-md-2">
+                <nav class="nav nav-pills flex-column nav-cardapio">
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas" class="fw-bold text-start nav-link font-color active">Bebidas</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alc" class="fw-bold text-start nav-link font-color">Bebidas alcoólicas</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#batatas" class="fw-bold text-start nav-link font-color">Batatas</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link font-color">Sobremesas</button>
+                </nav>    
+            </div>
+            <div class="col-md-10">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="bebidas">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/bebidas/coca-cola.jpg" alt="">
+                                <h5 class="mt-2 font-color fw-bold">Coca-Cola</h5>
+                                <p class="m-0"> Lata 350 ml <span class="font-color fw-bold">R$ 5,00</span></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/bebidas/guarana.png" alt="">
+                                <h5 class="mt-2 font-color fw-bold">Guaraná Antártica</h5>
+                                <p class="m-0"> Lata 350 ml <span class="font-color fw-bold">R$ 5,00</span></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/bebidas/aguagas.jpg" alt="Agua com gás Minalba">
+                                <h5 class="mt-2 font-color fw-bold">Água com gás Minalba</h5>
+                                <p class="m-0"> Garrafa <span class="font-color fw-bold">R$ 3,50</span></p>
+                            </div>  
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/bebidas/suco.jpg" alt="Suco de Laranja">
+                                <h5 class="mt-2 font-color fw-bold">Suco Laranja Del Valle</h5>
+                                <p class="m-0"> Caixa 1 Litro <span class="font-color fw-bold">R$ 13,50</span></p>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="bebidas-alc">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/bebidas/BrahmaDuploMalte.jpg" alt="">
+                                <h5 class="mt-2 font-color fw-bold">Brahma Duplo Malte</h5>
+                                <p class="m-0"> Lata 350 ml <span class="font-color fw-bold">R$ 4,50</span></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/bebidas/heineken.jpg" alt="">
+                                <h5 class="mt-2 font-color fw-bold">heineken</h5>
+                                <p class="m-0"> Lata 350 ml <span class="font-color fw-bold">R$ 5,50</span></p>
+                            </div>                            
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/bebidas/pergola1litro.jpg" alt="">
+                                <h5 class="mt-2 font-color fw-bold">Vinho Pérgola Suave</h5>
+                                <p class="m-0"> Garrafa 1 Litro tinto Suave<span class="font-color fw-bold">R$ 36,00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="batatas">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/pratos/pizza.jpg" alt="">
+                                <h5 class="mt-2 font-color fw-bold">Frango Catupiry</h5>
+                                <p class="m-0"> Tradicional <span class="font-color fw-bold">R$ 22,00</span></p>
+                                <p class="m-0"> Com Chedder <span class="font-color fw-bold">R$ 26,50</span></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/pratos/pizza.jpg" alt="">
+                                <h5 class="mt-2 font-color fw-bold">Strogonoff de Frango</h5>
+                                <p class="m-0"> Tradicional <span class="font-color fw-bold">R$ 22,00</span></p>
+                                <p class="m-0"> Trad. + Batata Palha <span class="font-color fw-bold">R$ 23,50</span></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/pratos/salmao.jpg" alt="">
+                                <h5 class="mt-2 font-color fw-bold">Requeijão com Bacon</h5>
+                                <p class="m-0"> Tradicional <span class="font-color fw-bold">R$ 25,00</span></p>
+                            </div>                            
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/bebidas/suco.jpg" alt="">
+                                <h5 class="mt-2 font-color fw-bold">Queijo com Molho Branco</h5>
+                                <p class="m-0"> Tradicional <span class="font-color fw-bold">R$ 29,00</span></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/pratos/pizza.jpg" alt="">
+                                <h5 class="mt-2 font-color fw-bold">Strogonoff de Frango</h5>
+                                <p class="m-0"> Tradicional <span class="font-color fw-bold">R$ 22,00</span></p>
+                                <p class="m-0"> Trad. + Batata Palha <span class="font-color fw-bold">R$ 23,50</span></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/pratos/salmao.jpg" alt="">
+                                <h5 class="mt-2 font-color fw-bold">Requeijão com Bacon</h5>
+                                <p class="m-0"> Tradicional <span class="font-color fw-bold">R$ 25,00</span></p>
+                            </div>   
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/pratos/pizza.jpg" alt="">
+                                <h5 class="mt-2 font-color fw-bold">Strogonoff de Frango</h5>
+                                <p class="m-0"> Tradicional <span class="font-color fw-bold">R$ 22,00</span></p>
+                                <p class="m-0"> Trad. + Batata Palha <span class="font-color fw-bold">R$ 23,50</span></p>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="sobremesas">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/sobremesas/prestigio.jpg" alt="Prestigio">
+                                <h5 class="mt-2 font-color fw-bold"></h5>
+                                <p class="m-0"> Prestigio <span class="font-color fw-bold">R$ 4,25</span></p>                                
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/sobremesas/snickers.jpg" alt="Snickers">
+                                <h5 class="mt-2 font-color fw-bold">Snickers</h5>
+                                <p class="m-0"> Snickers <span class="font-color fw-bold">R$ 5,00</span></p>
+                            </div>               
+                            <div class="col-md-3">
+                                <img class="d-block w-100 mt-2" src="images/cardapio/sobremesas/sonhodevalsa.jpg" alt="Sonho de Valsa">
+                                <h5 class="mt-2 font-color fw-bold">Sonho de Valsa</h5>
+                                <p class="m-0"> Sonho de Valsa <span class="font-color fw-bold">R$ 3,00</span></p>
+                            </div>                                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="contato" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center titulo-font">Faça seu <span class="font-color"> Pedido</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <form>
+                        <div>
+                            <label for="nome" class="form-label">Seu nome</label>
+                            <input type="text" id="nome" class="form-control" required>
+                            <label for="nome" class="form-label">Seu e-mail</label>
+                            <input type="email" id="email" class="form-control" required>
+                            <label for="nome" class="form-label">Seu telefone</label>
+                            <input type="tel" id="telefone" class="form-control">
+                            <label for="mensagem" class="form-label">Sua mensagem</label>
+                            <textarea  class="form-control" id="mensagem" required></textarea>
+                            <button class="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
