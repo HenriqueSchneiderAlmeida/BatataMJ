@@ -42,7 +42,8 @@ body {
     background-color: #ffeae6;
 }
 
-.nav-cardapio .nav-link.active {
+.nav-cardapio .nav-link.active,
+#contato button {
     background-color: #e15f41;
     color: #fff;
 }
@@ -53,4 +54,23 @@ body {
 
 .height-slide {
     height: 650px;
+}
+
+.redessociais li {
+    list-style: none;
+    display: block;
+}
+
+.redessociais a {
+    text-decoration: none;
+}
+
+.col-md-3 img {
+    height: 165px;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 220px;
+    }
 }
